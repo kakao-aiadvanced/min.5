@@ -1867,6 +1867,29 @@ files = [
 ]
 
 [[package]]
+name = "llmlingua"
+version = "0.2.2"
+description = "To speed up LLMs' inference and enhance LLM's perceive of key information, compress the prompt and KV-Cache, which achieves up to 20x compression with minimal performance loss."
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "llmlingua-0.2.2-py3-none-any.whl", hash = "sha256:da55137efe0db78063b3395396efe8a0dcfe4ae5a09aea0d503c34b7bf1d800c"},
+    {file = "llmlingua-0.2.2.tar.gz", hash = "sha256:1a0caedd8d5a65512a85dadb6bfda6f5b3c4b45e5cb9e7b1c6009573f9058572"},
+]
+
+[package.dependencies]
+accelerate = "*"
+nltk = "*"
+numpy = "*"
+tiktoken = "*"
+torch = "*"
+transformers = ">=4.26.0"
+
+[package.extras]
+dev = ["accelerate", "black (==21.4b0)", "flake8 (>=3.8.3)", "isort (>=5.5.4)", "nltk", "numpy", "pre-commit", "pytest", "pytest-xdist", "tiktoken", "torch", "transformers (>=4.26.0)"]
+quality = ["black (==21.4b0)", "flake8 (>=3.8.3)", "isort (>=5.5.4)", "pre-commit", "pytest", "pytest-xdist"]
+
+[[package]]
 name = "markupsafe"
 version = "2.1.5"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -4740,4 +4763,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "05cf5c5e09abf3406c53bb2e3385c191d5b779f6eb5c4b76f35502ced9801ceb"
+content-hash = "090e13e8b841f32c08ef3be0c58774f3d89dd0c254fa5ef656c36cf2d5383458"
